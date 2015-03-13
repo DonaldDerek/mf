@@ -425,7 +425,8 @@ span.signature{
 }
 .prev-video{
     text-align:center;
-    float:right;
+    display:inline-block;
+    width:472px;
     margin-right: 20px;
 }
 .prev-video p{
