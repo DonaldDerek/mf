@@ -443,6 +443,9 @@ span.signature{
     padding:40px 80px;
     min-height:1400px;
 }
+.clearfix{
+    clear:both;
+}
 .bio img{
     width:200px;
     height:200px;
