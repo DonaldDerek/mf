@@ -29,6 +29,7 @@ $(document).ready(function(){
         var par = $(this).parent().next();
         par.fadeToggle("slow");
         location.hash="#story";
+        $("#group5").css("margin-top","230px");
         scrollToElement('#story', 500);
     })
 });

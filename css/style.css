@@ -412,8 +412,27 @@ span.signature{
     font-size:0.9em;
     display:block
 }
-
-
+.testimonials ul{
+    list-style:none;
+    padding:10px 8px 30px 8px;
+}
+.testimonials ul li{
+    text-align:justify;
+    font-size:1.3em;
+    line-height:1.4;
+    margin-bottom:10px;
+    font-weight:100;
+}
+.prev-video{
+    text-align:center;
+}
+.prev-video p{
+    font-size:0.9em;
+    font-weight:200;
+    text-align:center;
+    margin-top: 1px;
+    margin-bottom: 33px;
+}
 /* Parallax base styles
 --------------------------------------------- */
 
@@ -492,4 +511,11 @@ span.signature{
     padding:20px 80px;
     background:#FEFEFE;
     color:#000;
+}
+#group4{
+    z-index:3;
+}
+#group5{
+    margin-top:160px;
+    z-index:5;
 }
