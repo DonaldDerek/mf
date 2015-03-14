@@ -1,9 +1,9 @@
 function toPage(page, speed){
     if(page == "#Mission"){ $(".parallax").animate({scrollTop:"513px"},speed);lightOn($('#mm'))}
-    else if(page == "#Products") {$(".parallax").animate({scrollTop:"1926px"},speed);lightOn($('#mp'))}
-    else if(page == "#Testimonials") {$(".parallax").animate({scrollTop:"3021px"},speed);lightOn($('#mt'))}
-    else if(page == "#Team") { $(".parallax").animate({scrollTop:"4001px"},speed);lightOn($('#ma'))}
-    else if(page == "#Press") { $(".parallax").animate({scrollTop:"5196px"},speed); lightOn($('#mr'))}
+    else if(page == "#Products") {$(".parallax").animate({scrollTop:"1607px"},speed);lightOn($('#mp'))}
+    else if(page == "#Testimonials") {$(".parallax").animate({scrollTop:"2573px"},speed);lightOn($('#mt'))}
+    else if(page == "#Team") { $(".parallax").animate({scrollTop:"4136px"},speed);lightOn($('#ma'))}
+    else if(page == "#Press") { $(".parallax").animate({scrollTop:"4659px"},speed); lightOn($('#mr'))}
 }
 function lightOn(elem){
     $(elem).parent().parent().find('a').css("opacity","1");
@@ -37,7 +37,7 @@ $(document).ready(function(){
             lightOn(false)
         }
     });
-    $("#Team").on({
+    $("#TeamP").on({
         mouseenter: function () {
             lightOn($('#ma'))
         },
@@ -54,8 +54,6 @@ $(document).ready(function(){
         }
     });
 
-    $(".tagline").fadeIn("fast");
-    $(".nav").fadeIn("fast");
     var videos = document.getElementsByTagName("video")
     $("#video").on({
         mouseenter: function () {
@@ -70,11 +68,9 @@ $(document).ready(function(){
         $(this).fadeOut("fast");
         var par = $(this).parent().next();
         par.fadeToggle("slow");
-        location.hash="#Story";
-        $("#group5").css("margin-top","230px");
     })
     $(".nav li a").on("click",function(e){
-
+        console.log($(".parallax").scrollTop())
         var page = $(this).attr("href");
         toPage(page,1000);
     })

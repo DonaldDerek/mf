@@ -354,7 +354,6 @@ a{
 .logo .tagline {
     padding: 6px 3px;
     font-weight: 200;
-    display:none;
     width:240px;
     opacity:0.7;
     font-size:0.4em;
@@ -365,7 +364,6 @@ ul.nav{
     float:right;
     opacity:0.9;
     padding:20px;
-    display:none;
 }
 ul.nav a{
     color:#FEFEFE;
@@ -383,7 +381,7 @@ svg{
 .bg{
     width:100%;
     height:auto;
-    margin: 100px 0 0 0;
+    margin: 10px 0 0 0;
 }
 .bg2{
     -webkit-filter: grayscale(100%);
@@ -391,7 +389,7 @@ svg{
 }
 p{
     line-height:1.4em;
-    font-size:1.2em;
+    font-size:1.3em;
 }
 .container{
     padding:0 60px 20px 60px;
@@ -415,6 +413,12 @@ span.signature{
 .testimonials ul{
     list-style:none;
     padding:10px 8px 30px 8px;
+}
+.testimonials .title{
+    margin-top: 30px;
+}
+.testpara{
+    background:#000;
 }
 .testimonials ul li{
     text-align:justify;
@@ -451,6 +455,10 @@ span.signature{
     margin-top:10px;
     min-height:400px;
 }
+.press .title{
+    text-align:left;
+    margin-left: 33px;
+}
 .clearfix{
     clear:both;
 }
@@ -468,6 +476,7 @@ span.signature{
     margin-left: 22px;
     padding: 0;
     margin-top: 0;
+    font-size:1em;
 }
 .press ul{
     list-style:none;
@@ -485,6 +494,13 @@ span.signature{
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     width:140px;
+}
+.press ul li a:hover{
+    opacity:0.5;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 /* Parallax base styles
 --------------------------------------------- */
@@ -546,6 +562,10 @@ span.signature{
 
 /* style the groups
 --------------------------------------------- */
+.space{
+    display:block;
+    width:100%;
+}
 
 #group1 {
     z-index: 5; /* slide over group 2 */
@@ -557,6 +577,12 @@ span.signature{
 #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
 }
+#group2 .title{
+    margin-top:20px;
+}
+#group2 .container br{
+    line-height: 2em;
+}
 #group3{
     z-index: 4;
 }
@@ -565,11 +591,14 @@ span.signature{
     background:#FEFEFE;
     color:#000;
 }
+#group3 .container h1, h2{
+    padding-bottom: 0px;
+    margin-bottom: -12px;
+}
 #group4{
     z-index:3;
 }
 #group5{
-    margin-top:160px;
     z-index:5;
 }
 #group6{
