@@ -74,4 +74,9 @@ $(document).ready(function(){
         var page = $(this).attr("href");
         toPage(page,1000);
     })
+    $(".more").on("click", function(){
+        console.log("foo")
+        $(this).parent().find(".hide").fadeIn("fast");
+        $(this).hide();
+    })
 });
